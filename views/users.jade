@@ -1,6 +1,7 @@
 extends layout
 
 block content
+    a(href="/users/create") Create user
     ul
         each user in users
-            li Name: #{user.name}, Age: #{user.age}
+            li Name: #{user.name}, Email: #{user.email}
